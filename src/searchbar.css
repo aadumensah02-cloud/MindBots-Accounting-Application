@@ -1,0 +1,46 @@
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+    /* gap: 40px; */
+    /* width: 100%;     */
+}
+
+.search-bar input {
+    margin-left: 135px;
+    margin-top: 6px;
+}
+
+.searchbar-head h2 {
+    display: inline;
+}
+
+.search-box h2 {
+    display: inline;
+}
+
+.searchbar-head1 h2 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.searchbar-head2 h2 {
+    font-weight: bold;
+    font-size: 23px;
+    display: inline-block;
+
+}
+
+.searchbar-icons{
+    padding:0;
+}
+.profile {
+    /* margin-left: 65px; */
+    /* display: flex;
+    flex-direction: column; */
+}
+

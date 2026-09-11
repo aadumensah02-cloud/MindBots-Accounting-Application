@@ -1,0 +1,97 @@
+.signup-container {
+ display: flex;
+ flex: 1;
+ min-height: 100vh;
+ font-family: 'Quicksand' , sans-serif;
+ background: #f9f9f9;
+}
+
+.signup-left {
+  flex: 0.35;
+  background: #0a0a23;
+  color: white;
+  padding: 40px;
+  text-align: left;
+  width: 10%;
+}
+
+.signup-left h2 {
+    font-size: 41px;
+    text-align: left;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.signup-left p {
+    color: grey;
+}
+
+.bottom-word {
+    margin-top: 260px;
+}
+
+
+.signup-right {
+    flex: 0.52;
+    padding: 40px;
+    margin-left: 170px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid #ccc;
+} 
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 225, 0.5);
+}
+
+.signup-button {
+    background: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 122px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.login-link {
+    text-align: center;  
+}
+
+.login-link a {
+    color: #2a752d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.checkbox {
+    display: flex;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+small {
+    color: grey;
+}

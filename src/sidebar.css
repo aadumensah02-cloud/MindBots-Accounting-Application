@@ -1,0 +1,124 @@
+.sidebar-nav ul {
+    text-decoration: none;
+    list-style: none;
+      
+    
+}
+
+.nav-link {
+    margin-bottom: 22px;
+    
+}
+.sidebar-nav {
+    margin-top: 49px;
+}
+
+aside nav a {
+ margin:0;
+ padding: 0;
+ margin-left: 10px;
+ font-family: 'Quicksand', sans-serif;
+}
+
+.bottom-part {
+    display: flex; 
+    flex-direction: column;
+}
+
+.sidebar-button {
+ width: max-content;
+ margin-top: 190px;
+ padding: 12px;
+ background-color: black;
+ color: white;
+ width: 100%;
+ border-radius: 11px; 
+
+}
+
+.nav-link {
+    display: block;
+    /* display: block; */
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    text-align: left;
+    border: none;
+    box-sizing: border-box;
+    align-items: flex-start;
+    /* width: 11%; */
+}
+
+.nav-link.active {
+    background-color: #1e94f6;
+    font-weight: bold;
+    color: lightblue;
+    border-radius: 7px;
+}
+
+.sidebar-header {
+    width: 250px;
+    background-color: #f8f8fa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.icon {
+    color: grey;
+}
+
+.bottom-part a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 29px;
+}
+
+.bottom-part a:hover {
+  transition: background 0.7 ease;
+  color: green;
+  text-decoration: underline;
+}
+
+svg {
+    margin-right: 8px;
+}
+
+.sidebar-logo {
+    font-family: 'Quicksandd', sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar-logo h1{
+    text-align: center;
+    font-size: 37px;
+    margin-bottom: 0;
+}
+
+.sidebar-mindbots {
+   text-align: center;
+   margin-left: 30px;
+}
+
+.sidebar-logo p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar-logo .sidebar-head {
+    margin-left: 20px;
+}
