@@ -52,7 +52,7 @@ aside nav a {
 }
 
 .nav-link.active {
-    background-color: #1e94f6;
+    background-color:#1e94f6; 
     font-weight: bold;
     color: lightblue;
     border-radius: 7px;
@@ -86,7 +86,7 @@ aside nav a {
 
 .bottom-part a:hover {
   transition: background 0.7 ease;
-  color: green;
+  color: #1e94f6;
   text-decoration: underline;
 }
 
