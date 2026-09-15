@@ -2,6 +2,13 @@
     font-size: 40px;
     margin-bottom: 20px;
     color: #1e94f6;
+    border: 1px solid #ccc;
+    padding: 10px 7px;
+    border-radius: 10px;
+}
+
+.download-icon:hover {
+    transform: translateY(-2px);
 }
 
 .category-buttons {
@@ -10,6 +17,10 @@
    margin-top: 20px;
    gap: 10px;
     
+}
+
+.category-buttons button:hover {
+    transform: translateY(-2px);
 }
 
 .category-buttons button {
