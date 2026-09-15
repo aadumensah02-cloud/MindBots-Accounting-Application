@@ -1,0 +1,52 @@
+.processing-queue-table table {
+    width: 74%;
+    border-collapse: collapse;
+    margin-left: 145px;
+}
+
+.processing-queue-table th, 
+.processing-queue-table td {
+    border: 2px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.processing-queue-table td {
+    background-color: #f4f4f4; 
+}
+
+.processing-queue-header {
+    display: flex;
+    gap: 250px;
+}
+
+.processing-queue-header h2 {
+    margin-left: 145px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.filter-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.refresh-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filter-button, 
+.refresh-button {
+    padding: 5px 30px;
+    background-color: white;
+    color: black;
+    border: 1 px solid black;
+    font-weight: 50px;
+    
+}
