@@ -1,11 +1,14 @@
 import DownloadDropdown from "./downloaddropdown";
 import type { DownloadItem } from "./downloadTypes";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter, faSync} from "@fortawesome/free-solid-svg-icons";
+import './processingqueue.css'
 
 const ProcessingQueue = () => {
     const files = [
-        { name: "INV-2024-001.pdf", size: "1.2 MB", vendor: "Microsoft", status: "Extracting data" },
-        { name: "Q3_Chase_Statement.pdf", size: "842 KB", account: "...9021", status: "Verified" },
-        { name: "Travel_Reimbursement_02.png", size: "842 KB", category: "Travel", status: "Parsed (Review Needed)" }
+        { name: "INV-2024-001.pdf", date: "2022-01-15", vendor: "Microsoft", status: "Extracting data" },
+        { name: "Q3_Chase_Statement.pdf", date: "2022-03-10", account: "...9021", status: "Verified" },
+        { name: "Travel_Reimbursement_02.png", date: "2022-04-05", category: "Travel", status: "Parsed (Review Needed" }
     ];
 
     const downloads: DownloadItem[] = [
@@ -21,19 +24,44 @@ const ProcessingQueue = () => {
 
     return (
         <div className="processing-queue">
-            <h2>Processing Queue</h2>
-             <DownloadDropdown
-                label="Downloads"
-                downloads={downloads}
-                onDownload={handleDownload}
-            />
-            <ul>
-                {files.map((file, idx) => (
-                    <li key={idx}>
-                        <strong>{file.name}</strong> ({file.size} - {file.status})
-                    </li>  
-                ))}
-            </ul>
+            <div className="processing-queue-header">
+                <h2>Processing Queue</h2>
+                <div className="header-buttons">
+                    <div><button className="filter-button"><FontAwesomeIcon icon={faFilter} />Filter</button></div>
+                    <div><button className="refresh-button"><FontAwesomeIcon icon={faSync} />Refresh</button></div>
+    
+                    <DownloadDropdown
+                       label="Downloads"
+                       downloads={downloads}
+                       onDownload={handleDownload}
+                    />
+                </div>
+            </div>
+
+            <div className="processing-queue-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Document</th>
+                            <th>Upload Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                          {files.map((file, idx) => (
+                            <tr key={idx}>
+                             <td><strong>{file.name}</strong></td> 
+                             <td>{file.date}</td>
+                             <td>{file.status}</td>
+                          </tr>  
+                            ))}    
+                    </tbody>
+
+                </table>
+            </div>
+            
+             
+            
         </div>
     );
 };
