@@ -1,9 +1,9 @@
-import React from "react";
+const AiAssistant: React.FC =() => {
+    return (
+        <div>
+            <h1>AI Assistant</h1>
+        </div>
+    )
+}
 
-
-const AIassistant: React.FC = () => {
-
-};
-
-
-export default AIassistant;
+export default AiAssistant;

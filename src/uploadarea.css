@@ -1,0 +1,72 @@
+.download-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #1e94f6;
+}
+
+.category-buttons {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   gap: 10px;
+    
+}
+
+.category-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+
+/* .upload-area {
+    border: 2px dashed #ccc;
+    padding: 5px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+} */
+
+
+.text-under-upload-area {
+    border: 2px dashed #ccc;
+    margin-left: 150px;
+    margin-right: 170px;
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #f8f8fa;
+}
+
+.upload-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-header {
+    margin: 0;
+    padding: 0;
+}
+
+.upload-head {
+    margin-bottom: 8px;
+}
+
+.upload-description {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.upload-text .lower-span {
+    color: grey; 
+    margin-top: 8px;
+}
+
+.upload-text .upper-span {
+    font-weight: bold;
+    font-size: 19px;
+}

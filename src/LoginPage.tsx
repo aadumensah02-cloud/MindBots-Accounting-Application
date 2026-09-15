@@ -1,6 +1,5 @@
 import React, {useState, type ChangeEvent , type FormEvent} from 'react';
 import './LoginPage.css';
-// import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router';
 
 <style>
@@ -75,7 +74,7 @@ const LoginPage: React.FC = () => {
           
       </form>
       <p className="signup-text">
-        New to MindBots? <a href="/signup">Sign up for a new account</a>
+        New to MindBots? <a href="/signuppage">Sign up for a new account</a>
       </p>
     </div>
   );

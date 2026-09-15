@@ -1,7 +1,7 @@
 .sidebar-nav ul {
     text-decoration: none;
     list-style: none;
-      
+    
     
 }
 
@@ -64,6 +64,7 @@ aside nav a {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    border: 2px solid #ededee;  
 }
 
 .sidebar {

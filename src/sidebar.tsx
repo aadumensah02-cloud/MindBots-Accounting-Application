@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./sidebar.css";
-import Transactions from "./transactions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTachometerAlt, faFileInvoice, faFileAlt, faRobot} from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router";
-import Searchbar from "./searchbar";
-
+// import Searchbar from "./searchbar";
 
 
 interface NewtransactionProps {
@@ -24,17 +21,17 @@ const Sidebar: React.FC<NewtransactionProps> = ({onTransactionClick}) => {
                    <h1>MindBots</h1>
                    <p>Accounting App</p>
                 </div>
-                <div className="sidebar-head">
+                {/* <div className="sidebar-head">
                     < Searchbar />
-                </div>
+                </div> */}
           </div>
           
             <aside className = "sidebar">
                 <nav className = "sidebar-nav">
                     <a href="/dashboard" className={currentPath === "/dashboard" ? "nav-link active" : "nav-link"}><FontAwesomeIcon icon = {faTachometerAlt} className = "icon" />Dashboard</a>
                     <a href="/transactions" className={currentPath === "/transactions" ? "nav-link active" : "nav-link"}> <FontAwesomeIcon icon = {faFileInvoice}  className = "icon" />Transactions</a>
-                    <a href="/Documents" className={currentPath === "/document" ? "nav-link active" : "nav-link"}><FontAwesomeIcon icon = {faFileAlt}  className = "icon" />Documents</a>
-                    <a href="/AI Assistant" className={currentPath === "/AI Assistant" ? "nav-link active" : "nav-link"}><FontAwesomeIcon icon = {faRobot} className = "icon" />AI Assistant</a>
+                    <a href="/documents" className={currentPath === "/documents" ? "nav-link active" : "nav-link"}><FontAwesomeIcon icon = {faFileAlt}  className = "icon" />Documents</a>
+                    <a href="/aiassistant" className={currentPath === "/aiassistant" ? "nav-link active" : "nav-link"}><FontAwesomeIcon icon = {faRobot} className = "icon" />AI Assistant</a>
                 </nav>
                 <div className = "bottom-part">
                      <button className = "sidebar-button" onClick={(e) => {

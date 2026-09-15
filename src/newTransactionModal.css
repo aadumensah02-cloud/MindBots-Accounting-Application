@@ -11,13 +11,13 @@
     font-family: 'Quisksand', sans-serif;
 }
 
- input {
+input {
  background: rgb(244, 243, 243);
  padding-left: 20px;
 }
 
 
-span {
+.modal-description span {
     font-weight: bold;
     color: grey;
     margin-bottom: 8px;

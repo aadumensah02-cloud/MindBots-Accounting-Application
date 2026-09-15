@@ -1,19 +1,12 @@
-import React, { useState } from "react";
-import Sidebar from "./sidebar";
+import React from "react";
 import "./dashboard.css";
-import Searchbar from "./searchbar"
 
 const Dashboard: React.FC = () => {
-    const [showModal,setShowModal] = useState(false);
-
-
     return (
-      <div className = "Top-part">
-          <Searchbar />
-          <Sidebar onTransactionClick={() => setShowModal(true)}/>   
-      </div>
-    );
-};
-
+        <div>
+            <h1>Dashboard</h1>
+        </div>
+    )
+}
 
 export default Dashboard;
