@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import type { DownloadItem } from "./downloadTypes";
+import './downloaddropdown.css'
 
 
 interface DownloadDropdownProps {
@@ -17,14 +18,14 @@ const DownloadDropdown: React.FC<DownloadDropdownProps> = ({ label, downloads, o
                {label}
             </button>
             {isOpen && (
-                <ul className="dropdown-menu">
+                <tbody className="dropdown-menu">
                     {downloads.map((item) => (
-                        <li key={item.id} onClick={() => onDownload(item.id)}>
+                        <tr key={item.id} onClick={() => onDownload(item.id)}>
                             <span>{item.name}</span>
                             <span className={`status ${item.status.toLowerCase()}`}>{item.status}</span>
-                        </li>
+                        </tr>
                     ))}
-                </ul>
+                </tbody>
             )}
         </div>
     );
